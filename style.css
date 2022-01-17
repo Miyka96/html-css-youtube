@@ -105,10 +105,13 @@ main{
 .play-list{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .play-list-item{
   width: 24%;
+  padding-bottom: 50px;
+  padding-right: 10px;
 }
 
 .card-header{
@@ -133,7 +136,7 @@ main{
 }
 
 /* MEDIA QUERY */
-
+/* sidebar */
 @media screen and (max-width:1330px) {
  
 .side-bar{
@@ -160,4 +163,29 @@ main{
   margin-right: 0;
 }
 
+@media screen and (max-width:800px) {
+  .side-bar{
+    display: none;
+  }
+}
+
+}
+
+/* MAIN CONTENT */
+@media screen and (max-width:1140px) {
+  .play-list-item{
+    width: 33%;
+  }
+}
+
+@media screen and (max-width:890px) {
+  .play-list-item{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:510px){
+  .play-list-item{
+    width: 100%;
+  }
 }
