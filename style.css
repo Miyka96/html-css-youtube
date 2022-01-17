@@ -131,3 +131,33 @@ main{
 .card-body img{
   border-radius: 50%;
 }
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:1330px) {
+ 
+.side-bar{
+  width: 70px;
+}
+.menu-item{
+  flex-direction: column;
+  font-size: 10px;
+  gap: 10px;
+}  
+.preference li:not(:first-child){
+  display: none;
+}
+.subscriptions{
+  display: none;
+}
+.widget{
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.menu-item .icon{
+  margin-right: 0;
+}
+
+}
